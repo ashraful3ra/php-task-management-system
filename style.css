@@ -1,0 +1,231 @@
+body {
+    font-family: 'Hind Siliguri', sans-serif; /* Stylish Bangla font */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.task-columns {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.task-column {
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+h3 {
+    color: #e74c3c; /* Red color for headers */
+    border-bottom: 2px solid #c0392b; /* Darker red for border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fce4e4; /* Soft red background */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover {
+    background-color: #f8d7da; /* Lighter red on hover */
+}
+
+form {
+    display: inline;
+}
+
+input[type="text"], button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+button {
+    background-color: #e74c3c; /* Red background for buttons */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.pending {
+    background-color: #fff3cd; /* Light yellow for pending tasks */
+    border-left: 5px solid #ffeeba; /* Darker yellow border for emphasis */
+}
+
+.pending:hover {
+    background-color: #fff8e1; /* Slightly lighter yellow on hover */
+}
+
+.completed {
+    background-color: #d4edda; /* Light green for completed tasks */
+    border-left: 5px solid #c3e6cb; /* Darker green border for emphasis */
+}
+
+.completed:hover {
+    background-color: #e8f5e9; /* Slightly lighter green on hover */
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2c3e50;
+    font-size: 1.2em; /* Adjust size as needed */
+    padding: 0 5px;
+}
+
+.icon-button:hover {
+    color: #e74c3c; /* Change hover color for emphasis */
+}
+
+.home-button {
+    display: inline-block;
+    padding: 5px 20px;
+    margin-top: 0px;
+    background-color: #e74c3c; /* Red background */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.home-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.pagination {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #ddd;
+    color: black;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.pagination a:hover {
+    background-color: #c0392b;
+}
+
+.clock {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #3498db; /* Stylish color */
+}
+
+.history-link {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 3px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.history-link:hover {
+    background-color: #c0392b;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .task-columns {
+        flex-direction: column;
+    }
+
+    .task-column {
+        margin: 10px 0;
+    }
+
+    .clock {
+        font-size: 18px;
+    }
+
+    .history-link {
+        font-size: 14px;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .task-column {
+        flex: none;
+        width: 45%;
+        margin: 10px;
+    }
+
+    .clock {
+        font-size: 20px;
+    }
+
+    .history-link {
+        font-size: 16px;
+    }
+}
